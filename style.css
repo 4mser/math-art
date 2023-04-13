@@ -53,7 +53,7 @@ canvas {
 .toggle-config {
   position: fixed;
   top: 2rem;
-  left: 2rem;
+  right: 2rem;
   background: none;
   color: white;
   width: 2rem;
@@ -67,3 +67,10 @@ canvas {
 
 
 
+.logo {
+  position: fixed;
+  width: 12rem;
+  top: 2rem;
+  left: 2rem;
+
+}
