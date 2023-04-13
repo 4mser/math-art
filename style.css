@@ -64,6 +64,7 @@ canvas {
   background: none;
   color: white;
   width: 2rem;
+  user-select: none;
   height: 2rem;
   filter: invert();
   border: none;
