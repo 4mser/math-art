@@ -9,12 +9,12 @@ canvas {
 
 .slider {
   position: fixed;
+  display: none;
   bottom: 4rem;
   width: 80%;
   left: 50%;
   transform: translate(-50%, -4rem);
   color: rgba(64, 64, 186, 0.541);
-  cursor: pointer;
 
 }
 
@@ -22,12 +22,12 @@ canvas {
   background: rgb(44, 44, 44);
   color: rgb(255, 255, 255);
   border: none;
+  display: none;
   padding: .5rem 1rem;
 }
 
 .button:hover {
   background: rgba(72, 72, 72, 0.934);
-  cursor: pointer;
 
 }
 
@@ -54,7 +54,6 @@ canvas {
   position: fixed;
   top: 2rem;
   left: 2rem;
-  cursor: pointer;
   background: none;
   color: white;
   width: 2rem;
