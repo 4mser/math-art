@@ -39,7 +39,7 @@ function setup() {
 }
 
 function draw() {
-  background(30);
+  background(20);
 
   if (rotateEnabled || dragRotateEnabled) {
     if (dragRotateEnabled) {
