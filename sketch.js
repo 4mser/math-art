@@ -24,15 +24,15 @@ function setup() {
   configItems = selectAll('#config-list li')
 
   // Vertices
-  slider = createSlider(1, 400, 1);
+  slider = createSlider(1, 400, 260);
   slider.class('slider');
 
   // Anillos
-  slider2 = createSlider(1, 100, 20);
+  slider2 = createSlider(1, 100, 80);
   slider2.class('slider2');
 
   // Velocidad de Rotación
-  slider3 = createSlider(1, 50, 4);
+  slider3 = createSlider(1, 50, 50);
   slider3.class('slider3');
 
   // Altura
@@ -40,15 +40,15 @@ function setup() {
   slider4.class('slider4');
 
   // Velocidad Eje Y
-  slider5 = createSlider(0, 5, 2);
+  slider5 = createSlider(0, 5, 4);
   slider5.class('slider5');
 
   // Amplitud de la onda
-  slider6 = createSlider(0, 200, 200);
+  slider6 = createSlider(0, 200, 25);
   slider6.class('slider6');
 
   // Color
-  slider7 = createSlider(1, 250, 250);
+  slider7 = createSlider(1, 250, 90);
   slider7.class('slider7');
   
   
