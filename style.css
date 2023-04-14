@@ -137,6 +137,7 @@ canvas {
 
 @media (max-width: 1000px) {
   .slider {
+    /* Ultimo Slider: Tiende a infinito lacantidad de linea formando un circulo */
     position: fixed;
     display: none;
     bottom: 4rem;
@@ -171,6 +172,7 @@ canvas {
   }
 
   .slider4 {
+    /* Primer slider: Cambia la extrusión en el eje Z */
     position: fixed;
     display: none;
     top: 10rem;
@@ -183,6 +185,7 @@ canvas {
   }
 
   .slider5 {
+    /* Slider 2: Cambia la fluctuación de la onda */
     position: fixed;
     display: none;
     top: 12rem;
