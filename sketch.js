@@ -24,11 +24,11 @@ function setup() {
   configItems = selectAll('#config-list li')
 
   // Vertices
-  slider = createSlider(1, 400, 260);
+  slider = createSlider(1, 400, 359);
   slider.class('slider');
 
   // Anillos
-  slider2 = createSlider(1, 100, 80);
+  slider2 = createSlider(1, 100, 100);
   slider2.class('slider2');
 
   // Velocidad de Rotación
@@ -36,19 +36,19 @@ function setup() {
   slider3.class('slider3');
 
   // Altura
-  slider4 = createSlider(0, 1000, 100);
+  slider4 = createSlider(0, 1000, 500);
   slider4.class('slider4');
 
   // Velocidad Eje Y
-  slider5 = createSlider(0, 5, 4);
+  slider5 = createSlider(0, 5, 0);
   slider5.class('slider5');
 
   // Amplitud de la onda
-  slider6 = createSlider(0, 200, 25);
+  slider6 = createSlider(0, 200, 250);
   slider6.class('slider6');
 
   // Color
-  slider7 = createSlider(1, 250, 90);
+  slider7 = createSlider(1, 250, 250);
   slider7.class('slider7');
   
   
@@ -111,10 +111,10 @@ function draw() {
   noFill();
   stroke(255);
 
-  for (let i = 0; i < step2; i++) {
-    let r = map(sin(frameCount / 10), -1, 1, 100, step7);
-    let g = map(i, 10, 50, 100, 200);
-    let b = map(cos(frameCount), -1, 1, 200, step7);
+  for (let i = -50; i < step2; i++) {
+    let r = map(sin(frameCount / 10), -1, 1, 100, 250);
+    let g = map(i, 10, 50, 100, step7);
+    let b = map(cos(frameCount), -1, 1, 200, 250);
 
     stroke(r, g, b);
 
