@@ -106,22 +106,19 @@ canvas {
     position: fixed;
     top: 19rem;
     width: 35%;
+    height: 3rem;
     right: 2rem;
     
   }
 
   .rotate {
     position: fixed;
-    top: 21.7rem;
+    top: 23rem;
     width: 35%;
+    height: 3rem;
     right: 2rem;  
   }
 
-  @media (max-width:600px) {
-    .rotate {
-      top: 24rem;
-    }
-  }
   
   
   
