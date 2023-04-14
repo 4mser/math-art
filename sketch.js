@@ -7,6 +7,7 @@ let slider5;
 let slider6;
 let slider7;
 let slider8;
+let tamaño;
 
 let configList, configItems;
 
@@ -55,6 +56,9 @@ function setup() {
   //Iteraciones de i desde
   slider8 = createSlider(-100, 0, -50);
   slider8.class('slider8');
+
+  tamaño = createSlider(1, 10, 3)
+  tamaño.class('tamaño')
   
   
   dragRotateButton = createButton("Activar rotación touch");
@@ -88,6 +92,7 @@ function setup() {
     slider7.style('display', elementsVisible ? 'none' : 'block');
     slider8.style('display', elementsVisible ? 'none' : 'block');
     rotateButton.style('display', elementsVisible ? 'none' : 'block');
+    tamaño.style('display', elementsVisible ? 'none' : 'block')
     dragRotateButton.style('display', elementsVisible ? 'none' : 'block');
   });
 }
@@ -115,6 +120,7 @@ function draw() {
   let step6 = slider6.value();
   let step7 = slider7.value();
   let step8 = slider8.value();
+  let stepTamaño = tamaño.value();
   noFill();
   stroke(255);
 
@@ -128,8 +134,8 @@ function draw() {
     rotate(frameCount / step3);
 
     beginShape();
-    for (let j = -0; j < 360; j += step) {
-      let rad = i *3;
+    for (let j = 0; j < 360; j += step) {
+      let rad = i *stepTamaño;
       let x = rad * cos(j);
       let y = rad * sin(j);
       let z = sin(frameCount * step5 + i * step6) * step4;
