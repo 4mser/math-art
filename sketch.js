@@ -4,6 +4,7 @@ let slider2;
 let slider3;
 let slider4;
 let slider5;
+let slider6;
 
 let rotateButton, dragRotateButton, toggleButton;
 
@@ -16,20 +17,23 @@ function setup() {
   createCanvas(windowWidth, windowHeight, WEBGL);
   angleMode(DEGREES);
 
-  slider = createSlider(1, 400, 60);
+  slider = createSlider(1, 400, 100);
   slider.class('slider');
 
-  slider2 = createSlider(1, 100, 60);
+  slider2 = createSlider(1, 100, 100);
   slider2.class('slider2');
 
-  slider3 = createSlider(1, 50, 60);
+  slider3 = createSlider(1, 50, 20);
   slider3.class('slider3');
 
-  slider4 = createSlider(1, 1000, 90);
+  slider4 = createSlider(0, 1000, 120);
   slider4.class('slider4');
 
-  slider5 = createSlider(0, 5);
+  slider5 = createSlider(0, 5, 0);
   slider5.class('slider5');
+
+  slider6 = createSlider(0, 20, 10);
+  slider6.class('slider6');
 
   rotateButton = createButton("Desactivar rotación automática");
   rotateButton.class('rotate button');
@@ -54,6 +58,7 @@ function setup() {
     slider3.style('display', elementsVisible ? 'none' : 'block');
     slider4.style('display', elementsVisible ? 'none' : 'block');
     slider5.style('display', elementsVisible ? 'none' : 'block');
+    slider6.style('display', elementsVisible ? 'none' : 'block');
     rotateButton.style('display', elementsVisible ? 'none' : 'block');
     dragRotateButton.style('display', elementsVisible ? 'none' : 'block');
   });
@@ -79,11 +84,12 @@ function draw() {
   let step3 = slider3.value();
   let step4 = slider4.value();
   let step5 = slider5.value();
+  let step6 = slider6.value();
   noFill();
   stroke(255);
 
   for (let i = 0; i < step2; i++) {
-    let r = map(sin(frameCount / 2), -1, 1, 100, 180);
+    let r = map(sin(frameCount / 10), -1, 1, 100, 180);
     let g = map(i, 10, 50, 100, 200);
     let b = map(cos(frameCount), -1, 1, 200, 200);
 
@@ -96,7 +102,7 @@ function draw() {
       let rad = i *3;
       let x = rad * cos(j);
       let y = rad * sin(j);
-      let z = sin(frameCount * step5 + i * -1) * step4;
+      let z = sin(frameCount * step5 + i * step6) * step4;
 
       vertex(x * zoom, y * zoom, z * zoom);
     }

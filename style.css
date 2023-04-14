@@ -62,6 +62,17 @@ canvas {
     color: rgba(64, 64, 186, 0.541);
   
   }
+
+  .slider6 {
+    position: fixed;
+    display: none;
+    top: 20rem;
+    width: 17rem;
+    right: 5rem;
+    cursor: pointer;
+    color: rgba(64, 64, 186, 0.541);
+  
+  }
   
   
   .button {
