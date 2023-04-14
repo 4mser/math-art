@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
@@ -7,157 +8,110 @@ canvas {
   display: block;
 }
 
+.slider,
+.slider2,
+.slider3,
+.slider4,
+.slider5,
+.slider6,
+.slider7,
+.button {
+  position: fixed;
+  display: none;
+  width: 35%;
+  right: 2rem;
+  color: rgba(64, 64, 186, 0.541);
+  cursor: pointer;
+}
 
-  .slider {
-    /* Controla el número de vertices */
-    position: fixed;
-    display: none;
-    top: 5rem;
-    width: 35%;
-    right: 2rem;
-    color: rgba(64, 64, 186, 0.541);
-  }
+.slider {
+  top: 5rem;
+}
 
-  .slider2 {
-    /* Controla el número de anillos al rededor */
-    position: fixed;
-    display: none;
-    top: 7rem;
-    width: 35%;
-    right: 2rem;
-    cursor: pointer;
-    color: rgba(64, 64, 186, 0.541);
-  
-  }
+.slider2 {
+  top: 7rem;
+}
 
-  .slider3 {
-    /* Velocidad de rotación */
-    position: fixed;
-    display: none;
-    top: 9rem;
-    width: 35%;
-    right: 2rem;
-    cursor: pointer;
-    color: rgba(64, 64, 186, 0.541);
-  
-  }
+.slider3 {
+  top: 9rem;
+}
 
-  .slider4 {
-    /* Controla la altura */
-    position: fixed;
-    display: none;
-    top: 11rem;
-    width: 35%;
-    right: 2rem;
-    cursor: pointer;
-    color: rgba(64, 64, 186, 0.541);
-  
-  }
+.slider4 {
+  top: 11rem;
+}
 
-  .slider5 {
-    /*Controla la velocidad que se mueve desde arriba hacia abajo */
-    position: fixed;
-    display: none;
-    top: 13rem;
-    width: 35%;
-    right: 2rem;
-    cursor: pointer;
-    color: rgba(64, 64, 186, 0.541);
-  
-  }
+.slider5 {
+  top: 13rem;
+}
 
-  .slider6 {
-    /* Controla la amplitud del movimiento hacia arriba y hacia abajo */
-    position: fixed;
-    display: none;
-    top: 15rem;
-    width: 35%;
-    right: 2rem;
-    cursor: pointer;
-    color: rgba(64, 64, 186, 0.541);
-  
-  }
+.slider6 {
+  top: 15rem;
+}
 
-  .slider7 {
-    /* Cambia el color */
-    position: fixed;
-    display: none;
-    top: 17rem;
-    width: 35%;
-    right: 2rem;
-    cursor: pointer;
-    color: rgba(64, 64, 186, 0.541);
-  }
-  
-  .button {
-    background: rgb(44, 44, 44);
-    color: rgb(255, 255, 255);
-    border: none;
-    display: none;
-    padding: .5rem 1rem;
-  }
-  
-  .button:hover {
-    background: rgba(72, 72, 72, 0.934);
-  
-  }
-  
-  .mouseRotate {
-    position: fixed;
-    top: 19rem;
-    width: 35%;
-    height: 3.5rem;
-    right: 2rem;
-    
-  }
+.slider7 {
+  top: 17rem;
+}
 
-  .rotate {
-    position: fixed;
-    top: 23rem;
-    width: 35%;
-    right: 2rem;  
-  }
+.button {
+  background: rgb(44, 44, 44);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: .5rem 1rem;
+}
 
-  
-  
-  
-  .toggle-config {
-    position: fixed;
-    top: 2.3rem;
-    right: 2rem;
-    background: none;
-    color: white;
-    user-select: none;
-    width: 1.5rem;
-    height: 1.5rem;
-    filter: invert();
-    border: none;
-    background-color: transparent;
-    font-size: 1.5rem;
-  }
-  
-  
-  
-  .logo {
-    position: fixed;
-    width: 12rem;
-    top: 2rem;
-    left: 1.2rem;
-  
-  }
+.button:hover {
+  background: rgba(72, 72, 72, 0.934);
+}
 
-  .controls {
-    position: fixed;
-    top: 4.6rem;
-    right: calc(35% + 3rem);
-    color: white;
-    list-style: none;
-    font-size: .6rem;
-    text-align: end;
-    display: none;
+.mouseRotate {
+  position: fixed;
+  top: 19rem;
+  width: 35%;
+  height: 3.5rem;
+  right: 2rem;
+}
 
-  }
+.rotate {
+  position: fixed;
+  top: 23rem;
+  width: 35%;
+  right: 2rem;  
+}
 
-  .controls li {
-    margin-bottom: 1.3rem;
-  }
+.toggle-config {
+  position: fixed;
+  top: 2.3rem;
+  right: 2rem;
+  background: none;
+  color: white;
+  user-select: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  filter: invert();
+  border: none;
+  background-color: transparent;
+  font-size: 1.5rem;
+}
+
+.logo {
+  position: fixed;
+  width: 12rem;
+  top: 2rem;
+  left: 1.2rem;
+}
+
+.controls {
+  position: fixed;
+  top: 4.6rem;
+  right: calc(35% + 3rem);
+  color: white;
+  list-style: none;
+  font-size: .6rem;
+  text-align: end;
+  display: none;
+}
+
+.controls li {
+  margin-bottom: 1.32rem;
+  font-family: montserrat;
+}

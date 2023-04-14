@@ -23,25 +23,31 @@ function setup() {
   configList = select('#config-list')
   configItems = selectAll('#config-list li')
 
+  // Vertices
   slider = createSlider(1, 400, 1);
   slider.class('slider');
 
-
+  // Anillos
   slider2 = createSlider(1, 100, 20);
   slider2.class('slider2');
 
+  // Velocidad de Rotación
   slider3 = createSlider(1, 50, 4);
   slider3.class('slider3');
 
+  // Altura
   slider4 = createSlider(0, 1000, 100);
   slider4.class('slider4');
 
+  // Velocidad Eje Y
   slider5 = createSlider(0, 5, 2);
   slider5.class('slider5');
 
+  // Amplitud de la onda
   slider6 = createSlider(0, 200, 200);
   slider6.class('slider6');
 
+  // Color
   slider7 = createSlider(1, 250, 250);
   slider7.class('slider7');
   
@@ -81,7 +87,7 @@ function setup() {
 }
 
 function draw() {
-  background(12);
+  background(15);
 
   if (rotateEnabled || dragRotateEnabled) {
     if (dragRotateEnabled) {
