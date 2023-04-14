@@ -5,6 +5,7 @@ let slider3;
 let slider4;
 let slider5;
 let slider6;
+let slider7;
 
 let rotateButton, dragRotateButton, toggleButton;
 
@@ -17,23 +18,27 @@ function setup() {
   createCanvas(windowWidth, windowHeight, WEBGL);
   angleMode(DEGREES);
 
-  slider = createSlider(1, 400, 100);
+  slider = createSlider(1, 400, 1);
   slider.class('slider');
 
-  slider2 = createSlider(1, 100, 100);
+
+  slider2 = createSlider(1, 100, 20);
   slider2.class('slider2');
 
-  slider3 = createSlider(1, 50, 20);
+  slider3 = createSlider(1, 50, 4);
   slider3.class('slider3');
 
-  slider4 = createSlider(0, 1000, 120);
+  slider4 = createSlider(0, 1000, 100);
   slider4.class('slider4');
 
-  slider5 = createSlider(0, 5, 0);
+  slider5 = createSlider(0, 5, 2);
   slider5.class('slider5');
 
-  slider6 = createSlider(0, 20, 10);
+  slider6 = createSlider(0, 200, 200);
   slider6.class('slider6');
+
+  slider7 = createSlider(1, 250, 250);
+  slider7.class('slider7');
 
   rotateButton = createButton("Desactivar rotación automática");
   rotateButton.class('rotate button');
@@ -59,6 +64,7 @@ function setup() {
     slider4.style('display', elementsVisible ? 'none' : 'block');
     slider5.style('display', elementsVisible ? 'none' : 'block');
     slider6.style('display', elementsVisible ? 'none' : 'block');
+    slider7.style('display', elementsVisible ? 'none' : 'block');
     rotateButton.style('display', elementsVisible ? 'none' : 'block');
     dragRotateButton.style('display', elementsVisible ? 'none' : 'block');
   });
@@ -85,13 +91,14 @@ function draw() {
   let step4 = slider4.value();
   let step5 = slider5.value();
   let step6 = slider6.value();
+  let step7 = slider7.value();
   noFill();
   stroke(255);
 
   for (let i = 0; i < step2; i++) {
-    let r = map(sin(frameCount / 10), -1, 1, 100, 180);
+    let r = map(sin(frameCount / 10), -1, 1, 100, step7);
     let g = map(i, 10, 50, 100, 200);
-    let b = map(cos(frameCount), -1, 1, 200, 200);
+    let b = map(cos(frameCount), -1, 1, 200, step7);
 
     stroke(r, g, b);
 

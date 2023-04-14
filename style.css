@@ -205,6 +205,18 @@ canvas {
     color: rgba(64, 64, 186, 0.541);
   
   }
+
+  .slider7 {
+    position: fixed;
+    display: none;
+    top: 16rem;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, -4rem);
+    cursor: pointer;
+    color: rgba(64, 64, 186, 0.541);
+  
+  }
   
   .button {
     background: rgb(44, 44, 44);
