@@ -117,9 +117,9 @@ canvas {
     right: 2rem;  
   }
 
-  @media (max-width:500px) {
+  @media (max-width:400px) {
     .rotate {
-      top: 22rem;
+      top: 24rem;
     }
   }
   
