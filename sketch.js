@@ -113,15 +113,15 @@ function draw() {
 
   for (let i = -50; i < step2; i++) {
     let r = map(sin(frameCount / 10), -1, 1, 100, 250);
-    let g = map(i, 10, 50, 100, step7);
-    let b = map(cos(frameCount), -1, 1, 200, 250);
+    let g = map(i, 10, 50, 100, 250);
+    let b = map(cos(frameCount), -1, 1, 200, step7);
 
     stroke(r, g, b);
 
     rotate(frameCount / step3);
 
     beginShape();
-    for (let j = 0; j < 360; j += step) {
+    for (let j = -0; j < 360; j += step) {
       let rad = i *3;
       let x = rad * cos(j);
       let y = rad * sin(j);
