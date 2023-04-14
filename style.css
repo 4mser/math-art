@@ -137,10 +137,10 @@ canvas {
 
 @media (max-width: 1000px) {
   .slider {
-    /* Ultimo Slider: Tiende a infinito lacantidad de linea formando un circulo */
+    /* Controla el número de vertices */
     position: fixed;
     display: none;
-    bottom: 4rem;
+    top: 10rem;
     width: 80%;
     left: 50%;
     transform: translate(-50%, -4rem);
@@ -148,44 +148,7 @@ canvas {
   }
 
   .slider2 {
-    position: fixed;
-    display: none;
-    bottom: 6rem;
-    width: 80%;
-    left: 50%;
-    transform: translate(-50%, -4rem);
-    cursor: pointer;
-    color: rgba(64, 64, 186, 0.541);
-  
-  }
-
-  .slider3 {
-    position: fixed;
-    display: none;
-    bottom: 8rem;
-    width: 80%;
-    left: 50%;
-    transform: translate(-50%, -4rem);
-    cursor: pointer;
-    color: rgba(64, 64, 186, 0.541);
-  
-  }
-
-  .slider4 {
-    /* Primer slider: Cambia la extrusión en el eje Z */
-    position: fixed;
-    display: none;
-    top: 10rem;
-    width: 80%;
-    left: 50%;
-    transform: translate(-50%, -4rem);
-    cursor: pointer;
-    color: rgba(64, 64, 186, 0.541);
-  
-  }
-
-  .slider5 {
-    /* Slider 2: Cambia la fluctuación de la onda */
+    /* Controla el número de anillos al rededor */
     position: fixed;
     display: none;
     top: 12rem;
@@ -197,7 +160,8 @@ canvas {
   
   }
 
-  .slider6 {
+  .slider3 {
+    /* Velocidad de rotación */
     position: fixed;
     display: none;
     top: 14rem;
@@ -209,10 +173,49 @@ canvas {
   
   }
 
+  .slider4 {
+    /* Controla la altura */
+    position: fixed;
+    display: none;
+    bottom: 10rem;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, -4rem);
+    cursor: pointer;
+    color: rgba(64, 64, 186, 0.541);
+  
+  }
+
+  .slider5 {
+    /*Controla la velocidad que se mueve desde arriba hacia abajo */
+    position: fixed;
+    display: none;
+    bottom: 8rem;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, -4rem);
+    cursor: pointer;
+    color: rgba(64, 64, 186, 0.541);
+  
+  }
+
+  .slider6 {
+    /* Controla la amplitud del movimiento hacia arriba y hacia abajo */
+    position: fixed;
+    display: none;
+    bottom: 6rem;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, -4rem);
+    cursor: pointer;
+    color: rgba(64, 64, 186, 0.541);
+  
+  }
+
   .slider7 {
     position: fixed;
     display: none;
-    top: 16rem;
+    bottom: 4rem;
     width: 80%;
     left: 50%;
     transform: translate(-50%, -4rem);
