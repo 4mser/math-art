@@ -140,10 +140,9 @@ canvas {
     /* Controla el número de vertices */
     position: fixed;
     display: none;
-    top: 10rem;
-    width: 80%;
-    left: 50%;
-    transform: translate(-50%, -4rem);
+    top: 5rem;
+    width: 35%;
+    right: 2rem;
     color: rgba(64, 64, 186, 0.541);
   }
 
@@ -151,10 +150,9 @@ canvas {
     /* Controla el número de anillos al rededor */
     position: fixed;
     display: none;
-    top: 12rem;
-    width: 80%;
-    left: 50%;
-    transform: translate(-50%, -4rem);
+    top: 7rem;
+    width: 35%;
+    right: 2rem;
     cursor: pointer;
     color: rgba(64, 64, 186, 0.541);
   
@@ -164,10 +162,9 @@ canvas {
     /* Velocidad de rotación */
     position: fixed;
     display: none;
-    top: 14rem;
-    width: 80%;
-    left: 50%;
-    transform: translate(-50%, -4rem);
+    top: 9rem;
+    width: 35%;
+    right: 2rem;
     cursor: pointer;
     color: rgba(64, 64, 186, 0.541);
   
@@ -177,10 +174,9 @@ canvas {
     /* Controla la altura */
     position: fixed;
     display: none;
-    bottom: 10rem;
-    width: 80%;
-    left: 50%;
-    transform: translate(-50%, -4rem);
+    top: 11rem;
+    width: 35%;
+    right: 2rem;
     cursor: pointer;
     color: rgba(64, 64, 186, 0.541);
   
@@ -190,10 +186,9 @@ canvas {
     /*Controla la velocidad que se mueve desde arriba hacia abajo */
     position: fixed;
     display: none;
-    bottom: 8rem;
-    width: 80%;
-    left: 50%;
-    transform: translate(-50%, -4rem);
+    top: 13rem;
+    width: 35%;
+    right: 2rem;
     cursor: pointer;
     color: rgba(64, 64, 186, 0.541);
   
@@ -203,22 +198,21 @@ canvas {
     /* Controla la amplitud del movimiento hacia arriba y hacia abajo */
     position: fixed;
     display: none;
-    bottom: 6rem;
-    width: 80%;
-    left: 50%;
-    transform: translate(-50%, -4rem);
+    top: 15rem;
+    width: 35%;
+    right: 2rem;
     cursor: pointer;
     color: rgba(64, 64, 186, 0.541);
   
   }
 
   .slider7 {
+    /* Cambia el color */
     position: fixed;
     display: none;
-    bottom: 4rem;
-    width: 80%;
-    left: 50%;
-    transform: translate(-50%, -4rem);
+    top: 17rem;
+    width: 35%;
+    right: 2rem;
     cursor: pointer;
     color: rgba(64, 64, 186, 0.541);
   
@@ -237,23 +231,22 @@ canvas {
   
   }
   
+  .mouseRotate {
+    position: fixed;
+    top: 19rem;
+    width: 35%;
+    right: 2rem;
+    
+  }
+
   .rotate {
     position: fixed;
-    bottom: 1rem;
-    width: 80%;
-    left: 50%;
-    transform: translate(-50%, -1rem);
+    top: 21.7rem;
+    width: 35%;
+    right: 2rem;
     
   }
   
-  .mouseRotate {
-    position: fixed;
-    bottom: 2.5rem;
-    width: 80%;
-    left: 50%;
-    transform: translate(-50%, -2.5rem);
-    
-  }
   
   
   .toggle-config {

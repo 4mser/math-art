@@ -39,6 +39,13 @@ function setup() {
 
   slider7 = createSlider(1, 250, 250);
   slider7.class('slider7');
+  
+  dragRotateButton = createButton("Activar rotación touch");
+  dragRotateButton.class('mouseRotate button');
+  dragRotateButton.mousePressed(() => {
+    dragRotateEnabled = !dragRotateEnabled;
+    dragRotateButton.html(dragRotateEnabled ? "Desactivar rotación touch" : "Activar rotación touch");
+  });
 
   rotateButton = createButton("Desactivar rotación automática");
   rotateButton.class('rotate button');
@@ -47,12 +54,6 @@ function setup() {
     rotateButton.html(rotateEnabled ? "Desactivar rotación automática" : "Activar rotación automática");
   });
 
-  dragRotateButton = createButton("Activar rotación touch");
-  dragRotateButton.class('mouseRotate button');
-  dragRotateButton.mousePressed(() => {
-    dragRotateEnabled = !dragRotateEnabled;
-    dragRotateButton.html(dragRotateEnabled ? "Desactivar rotación touch" : "Activar rotación touch");
-  });
 
   toggleButton = createImg('gear.svg');
   toggleButton.class('toggle-config');
