@@ -1,5 +1,10 @@
 
 let slider;
+let slider2;
+let slider3;
+let slider4;
+let slider5;
+
 let rotateButton, dragRotateButton, toggleButton;
 
 let rotateEnabled = true;
@@ -11,8 +16,20 @@ function setup() {
   createCanvas(windowWidth, windowHeight, WEBGL);
   angleMode(DEGREES);
 
-  slider = createSlider(1, 300, 60);
+  slider = createSlider(1, 400, 60);
   slider.class('slider');
+
+  slider2 = createSlider(1, 100, 60);
+  slider2.class('slider2');
+
+  slider3 = createSlider(1, 50, 60);
+  slider3.class('slider3');
+
+  slider4 = createSlider(1, 1000, 90);
+  slider4.class('slider4');
+
+  slider5 = createSlider(0, 5);
+  slider5.class('slider5');
 
   rotateButton = createButton("Desactivar rotación automática");
   rotateButton.class('rotate button');
@@ -33,17 +50,21 @@ function setup() {
   toggleButton.mousePressed(() => {
     elementsVisible = !elementsVisible;
     slider.style('display', elementsVisible ? 'none' : 'block');
+    slider2.style('display', elementsVisible ? 'none' : 'block');
+    slider3.style('display', elementsVisible ? 'none' : 'block');
+    slider4.style('display', elementsVisible ? 'none' : 'block');
+    slider5.style('display', elementsVisible ? 'none' : 'block');
     rotateButton.style('display', elementsVisible ? 'none' : 'block');
     dragRotateButton.style('display', elementsVisible ? 'none' : 'block');
   });
 }
 
 function draw() {
-  background(20);
+  background(12);
 
   if (rotateEnabled || dragRotateEnabled) {
     if (dragRotateEnabled) {
-      let dx = map(mouseX, 0, width, -180, 180);
+      let dx = map(mouseX, 0, width, -180, 200);
       let dy = map(mouseY, 0, height, -180, 180);
       rotateY(dx);
       rotateX(dy);
@@ -54,24 +75,28 @@ function draw() {
   }
 
   let step = slider.value();
+  let step2 = slider2.value();
+  let step3 = slider3.value();
+  let step4 = slider4.value();
+  let step5 = slider5.value();
   noFill();
   stroke(255);
 
-  for (let i = 0; i < 50; i++) {
-    let r = map(sin(frameCount / 2), -1, 1, 100, 200);
-    let g = map(i, 0, 50, 100, 200);
-    let b = map(cos(frameCount), -1, 1, 200, 100);
+  for (let i = 0; i < step2; i++) {
+    let r = map(sin(frameCount / 2), -1, 1, 100, 180);
+    let g = map(i, 10, 50, 100, 200);
+    let b = map(cos(frameCount), -1, 1, 200, 200);
 
     stroke(r, g, b);
 
-    rotate(frameCount / 50);
+    rotate(frameCount / step3);
 
     beginShape();
     for (let j = 0; j < 360; j += step) {
-      let rad = i * 3;
+      let rad = i *3;
       let x = rad * cos(j);
       let y = rad * sin(j);
-      let z = sin(frameCount * 2 + i * 5) * 50;
+      let z = sin(frameCount * step5 + i * -1) * step4;
 
       vertex(x * zoom, y * zoom, z * zoom);
     }
@@ -85,6 +110,6 @@ function windowResized() {
 
 function mouseWheel(event) {
   zoom += event.delta / 1000;
-  zoom = constrain(zoom, 1, 4);
+  zoom = constrain(zoom, 1, 6);
   
 }

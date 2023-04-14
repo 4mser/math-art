@@ -7,70 +7,236 @@ canvas {
   display: block;
 }
 
-.slider {
-  position: fixed;
-  display: none;
-  bottom: 4rem;
-  width: 80%;
-  left: 50%;
-  transform: translate(-50%, -4rem);
-  color: rgba(64, 64, 186, 0.541);
-
-}
-
-.button {
-  background: rgb(44, 44, 44);
-  color: rgb(255, 255, 255);
-  border: none;
-  display: none;
-  padding: .5rem 1rem;
-}
-
-.button:hover {
-  background: rgba(72, 72, 72, 0.934);
-
-}
-
-.rotate {
-  position: fixed;
-  bottom: 1rem;
-  width: 80%;
-  left: 50%;
-  transform: translate(-50%, -1rem);
+@media (min-width:1000px) {
+  .slider {
+    position: fixed;
+    display: none;
+    top: 10rem;
+    width: 17rem;
+    right: 5rem;
+    cursor: pointer;
+    color: rgba(64, 64, 186, 0.541);
   
-}
+  }
 
-.mouseRotate {
-  position: fixed;
-  bottom: 2.5rem;
-  width: 80%;
-  left: 50%;
-  transform: translate(-50%, -2.5rem);
+  .slider2 {
+    position: fixed;
+    display: none;
+    top: 12rem;
+    width: 17rem;
+    right: 5rem;
+    cursor: pointer;
+    color: rgba(64, 64, 186, 0.541);
   
+  }
+
+  .slider3 {
+    position: fixed;
+    display: none;
+    top: 14rem;
+    width: 17rem;
+    right: 5rem;
+    cursor: pointer;
+    color: rgba(64, 64, 186, 0.541);
+  
+  }
+
+  .slider4 {
+    position: fixed;
+    display: none;
+    top: 16rem;
+    width: 17rem;
+    right: 5rem;
+    cursor: pointer;
+    color: rgba(64, 64, 186, 0.541);
+  
+  }
+
+  .slider5 {
+    position: fixed;
+    display: none;
+    top: 18rem;
+    width: 17rem;
+    right: 5rem;
+    cursor: pointer;
+    color: rgba(64, 64, 186, 0.541);
+  
+  }
+  
+  
+  .button {
+    background: rgb(44, 44, 44);
+    color: rgb(255, 255, 255);
+    border: none;
+    display: none;
+    padding: .5rem 1rem;
+    text-align: right;
+  }
+  
+  .button:hover {
+    background: rgba(72, 72, 72, 0.934);
+  
+  }
+  
+  .rotate {
+    position: fixed;
+    top: 7.2rem;
+    cursor: pointer;
+    width: 17rem;
+    right: 5rem;
+    
+  }
+  
+  .mouseRotate {
+    position: fixed;
+    top: 4.5rem;
+    cursor: pointer;
+    width: 17rem;
+    right: 5rem;
+    
+  }
+  
+  
+  .toggle-config {
+    position: fixed;
+    top: 2rem;
+    right: 5rem;
+    background: none;
+    color: white;
+    user-select: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    filter: invert();
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+  }
+  
+  
+  
+  .logo {
+    position: fixed;
+    width: 12rem;
+    top: 2rem;
+    cursor: pointer;
+    left: 5rem;
+  
+  }
 }
 
+@media (max-width: 1000px) {
+  .slider {
+    position: fixed;
+    display: none;
+    bottom: 4rem;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, -4rem);
+    color: rgba(64, 64, 186, 0.541);
+  }
 
-.toggle-config {
-  position: fixed;
-  top: 2rem;
-  right: 2rem;
-  background: none;
-  color: white;
-  width: 2rem;
-  user-select: none;
-  height: 2rem;
-  filter: invert();
-  border: none;
-  background-color: transparent;
-  font-size: 2rem;
-}
+  .slider2 {
+    position: fixed;
+    display: none;
+    bottom: 6rem;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, -4rem);
+    cursor: pointer;
+    color: rgba(64, 64, 186, 0.541);
+  
+  }
 
+  .slider3 {
+    position: fixed;
+    display: none;
+    bottom: 8rem;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, -4rem);
+    cursor: pointer;
+    color: rgba(64, 64, 186, 0.541);
+  
+  }
 
+  .slider4 {
+    position: fixed;
+    display: none;
+    top: 12rem;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, -4rem);
+    cursor: pointer;
+    color: rgba(64, 64, 186, 0.541);
+  
+  }
 
-.logo {
-  position: fixed;
-  width: 12rem;
-  top: 2rem;
-  left: 1.2rem;
-
+  .slider5 {
+    position: fixed;
+    display: none;
+    top: 14rem;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, -4rem);
+    cursor: pointer;
+    color: rgba(64, 64, 186, 0.541);
+  
+  }
+  
+  .button {
+    background: rgb(44, 44, 44);
+    color: rgb(255, 255, 255);
+    border: none;
+    display: none;
+    padding: .5rem 1rem;
+  }
+  
+  .button:hover {
+    background: rgba(72, 72, 72, 0.934);
+  
+  }
+  
+  .rotate {
+    position: fixed;
+    bottom: 1rem;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, -1rem);
+    
+  }
+  
+  .mouseRotate {
+    position: fixed;
+    bottom: 2.5rem;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, -2.5rem);
+    
+  }
+  
+  
+  .toggle-config {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background: none;
+    color: white;
+    user-select: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    filter: invert();
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+  }
+  
+  
+  
+  .logo {
+    position: fixed;
+    width: 12rem;
+    top: 2rem;
+    left: 1.2rem;
+  
+  }
 }
