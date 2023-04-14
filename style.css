@@ -7,135 +7,7 @@ canvas {
   display: block;
 }
 
-@media (min-width:1000px) {
-  .slider {
-    position: fixed;
-    display: none;
-    top: 10rem;
-    width: 17rem;
-    right: 5rem;
-    cursor: pointer;
-    color: rgba(64, 64, 186, 0.541);
-  
-  }
 
-  .slider2 {
-    position: fixed;
-    display: none;
-    top: 12rem;
-    width: 17rem;
-    right: 5rem;
-    cursor: pointer;
-    color: rgba(64, 64, 186, 0.541);
-  
-  }
-
-  .slider3 {
-    position: fixed;
-    display: none;
-    top: 14rem;
-    width: 17rem;
-    right: 5rem;
-    cursor: pointer;
-    color: rgba(64, 64, 186, 0.541);
-  
-  }
-
-  .slider4 {
-    position: fixed;
-    display: none;
-    top: 16rem;
-    width: 17rem;
-    right: 5rem;
-    cursor: pointer;
-    color: rgba(64, 64, 186, 0.541);
-  
-  }
-
-  .slider5 {
-    position: fixed;
-    display: none;
-    top: 18rem;
-    width: 17rem;
-    right: 5rem;
-    cursor: pointer;
-    color: rgba(64, 64, 186, 0.541);
-  
-  }
-
-  .slider6 {
-    position: fixed;
-    display: none;
-    top: 20rem;
-    width: 17rem;
-    right: 5rem;
-    cursor: pointer;
-    color: rgba(64, 64, 186, 0.541);
-  
-  }
-  
-  
-  .button {
-    background: rgb(44, 44, 44);
-    color: rgb(255, 255, 255);
-    border: none;
-    display: none;
-    padding: .5rem 1rem;
-    text-align: right;
-  }
-  
-  .button:hover {
-    background: rgba(72, 72, 72, 0.934);
-  
-  }
-  
-  .rotate {
-    position: fixed;
-    top: 7.2rem;
-    cursor: pointer;
-    width: 17rem;
-    right: 5rem;
-    
-  }
-  
-  .mouseRotate {
-    position: fixed;
-    top: 4.5rem;
-    cursor: pointer;
-    width: 17rem;
-    right: 5rem;
-    
-  }
-  
-  
-  .toggle-config {
-    position: fixed;
-    top: 2rem;
-    right: 5rem;
-    background: none;
-    color: white;
-    user-select: none;
-    width: 1.5rem;
-    height: 1.5rem;
-    filter: invert();
-    border: none;
-    background-color: transparent;
-    font-size: 1.5rem;
-  }
-  
-  
-  
-  .logo {
-    position: fixed;
-    width: 12rem;
-    top: 2rem;
-    cursor: pointer;
-    left: 5rem;
-  
-  }
-}
-
-@media (max-width: 1000px) {
   .slider {
     /* Controla el número de vertices */
     position: fixed;
@@ -215,7 +87,6 @@ canvas {
     right: 2rem;
     cursor: pointer;
     color: rgba(64, 64, 186, 0.541);
-  
   }
   
   .button {
@@ -243,8 +114,13 @@ canvas {
     position: fixed;
     top: 21.7rem;
     width: 35%;
-    right: 2rem;
-    
+    right: 2rem;  
+  }
+
+  @media (max-width:500px) {
+    .rotate {
+      top: 22rem;
+    }
   }
   
   
@@ -273,4 +149,3 @@ canvas {
     left: 1.2rem;
   
   }
-}
