@@ -15,6 +15,7 @@ canvas {
 .slider5,
 .slider6,
 .slider7,
+.slider8,
 .button {
   position: fixed;
   display: none;
@@ -52,6 +53,10 @@ canvas {
   top: 17rem;
 }
 
+.slider8 {
+  top: 19rem;
+}
+
 .button {
   background: rgb(44, 44, 44);
   color: rgb(255, 255, 255);
@@ -65,7 +70,7 @@ canvas {
 
 .mouseRotate {
   position: fixed;
-  top: 19rem;
+  top: 21rem;
   width: 35%;
   height: 3.5rem;
   right: 2rem;
@@ -73,7 +78,7 @@ canvas {
 
 .rotate {
   position: fixed;
-  top: 23rem;
+  top: 25rem;
   width: 35%;
   right: 2rem;  
 }
