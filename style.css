@@ -145,3 +145,19 @@ canvas {
     left: 1.2rem;
   
   }
+
+  .controls {
+    position: fixed;
+    top: 4.6rem;
+    right: calc(35% + 3rem);
+    color: white;
+    list-style: none;
+    font-size: .6rem;
+    text-align: end;
+    display: none;
+
+  }
+
+  .controls li {
+    margin-bottom: 1.3rem;
+  }

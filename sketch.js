@@ -7,6 +7,8 @@ let slider5;
 let slider6;
 let slider7;
 
+let configList, configItems;
+
 let rotateButton, dragRotateButton, toggleButton;
 
 let rotateEnabled = true;
@@ -17,6 +19,9 @@ let elementsVisible = true;
 function setup() {
   createCanvas(windowWidth, windowHeight, WEBGL);
   angleMode(DEGREES);
+
+  configList = select('#config-list')
+  configItems = selectAll('#config-list li')
 
   slider = createSlider(1, 400, 1);
   slider.class('slider');
@@ -40,6 +45,7 @@ function setup() {
   slider7 = createSlider(1, 250, 250);
   slider7.class('slider7');
   
+  
   dragRotateButton = createButton("Activar rotación touch");
   dragRotateButton.class('mouseRotate button');
   dragRotateButton.mousePressed(() => {
@@ -59,6 +65,9 @@ function setup() {
   toggleButton.class('toggle-config');
   toggleButton.mousePressed(() => {
     elementsVisible = !elementsVisible;
+
+    configList.style('display', elementsVisible ? 'none' : 'block')
+
     slider.style('display', elementsVisible ? 'none' : 'block');
     slider2.style('display', elementsVisible ? 'none' : 'block');
     slider3.style('display', elementsVisible ? 'none' : 'block');
