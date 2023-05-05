@@ -98,7 +98,7 @@ function setup() {
 }
 
 function draw() {
-  background(15);
+  background(10);
 
   if (rotateEnabled || dragRotateEnabled) {
     if (dragRotateEnabled) {

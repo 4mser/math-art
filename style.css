@@ -90,7 +90,7 @@ canvas {
 
 .toggle-config {
   position: fixed;
-  top: 2.3rem;
+  top: 1.7rem;
   right: 2rem;
   background: none;
   color: white;
@@ -106,8 +106,8 @@ canvas {
 .logo {
   position: fixed;
   width: 12rem;
-  top: 2rem;
-  left: 1.2rem;
+  top: 1.3rem;
+  left: .75rem;
 }
 
 .controls {
